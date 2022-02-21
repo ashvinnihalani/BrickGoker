@@ -15,11 +15,27 @@ position = Vector2( 515, 572 )
 position = Vector2( 517, 68 )
 
 [node name="Box" parent="." instance=ExtResource( 3 )]
-position = Vector2( 518, 17 )
+position = Vector2( 464, 15.4531 )
+scale = Vector2( 0.847235, 0.473872 )
+
+[node name="Box3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 361, 15.4531 )
 scale = Vector2( 0.847235, 0.473872 )
 
 [node name="Box2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 621, 17 )
+position = Vector2( 670, 18 )
+scale = Vector2( 0.847235, 0.473872 )
+
+[node name="Box4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 155.258, 15.9062 )
+scale = Vector2( 0.847235, 0.473872 )
+
+[node name="Box5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 52.2577, 15.9062 )
+scale = Vector2( 0.847235, 0.473872 )
+
+[node name="Box6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 258.258, 15.9062 )
 scale = Vector2( 0.847235, 0.473872 )
 
 [connection signal="visibility_changed" from="Ball" to="Paddle" method="_on_Ball_visibility_changed"]
