@@ -9,6 +9,7 @@ export var speed = 100
 var velocity = 0
 
 # Called when the node enters the scene tree for the first time.
+# Ball start off on the paddle to begin with and the direction of the first movement, starts the games and directs the ball
 func _ready():
 	pass # Replace with function body.
 

@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 
+var cracked = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +16,10 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
 func _on_Area2D_area_entered(area):
-	visible = false
-	$Area2D.queue_free()
+	if not cracked:
+		# Add seperate texture to indicate cracked
+		cracked = true
+	else:
+		visible = false
+		$Area2D.queue_free()

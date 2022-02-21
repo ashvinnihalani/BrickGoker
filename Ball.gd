@@ -21,6 +21,7 @@ func _process(delta):
 	position.y += delta * speedY
 
 
+# Speed changes on where the area is entered. Ie if the ball touches on the left/right only the right changes if it touches on the top or bottom it touches on the top or bottom
 func _on_Area2D_area_entered(area):
 	speedX = -1 * speedX
 	speedY = -1 * speedY
